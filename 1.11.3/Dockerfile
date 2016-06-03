@@ -4,8 +4,8 @@ MAINTAINER Rex Tsai <rex.cc.tsai@gmail.com>
 ENV GDAL_VERSION=1.11.3+dfsg-3build2 \
     POSTGIS_VERSION=2.2.1+dfsg-2
 RUN apt-get install -y \
-    gdal-bin=$POSTGIS_VERSION \
-    python-gdal=$POSTGIS_VERSION \
+    gdal-bin=$GDAL_VERSION \
+    python-gdal=$GDAL_VERSION \
     postgis=$POSTGIS_VERSION \
     ogdi-bin \
     proj-bin
