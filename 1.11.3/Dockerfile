@@ -8,7 +8,8 @@ RUN apt-get install -y \
     python-gdal=$GDAL_VERSION \
     postgis=$POSTGIS_VERSION \
     ogdi-bin \
-    proj-bin
+    proj-bin \
+    pktools
 
 # Clean up APT when done
 RUN apt-get clean \
